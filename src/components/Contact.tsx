@@ -25,7 +25,7 @@ export default function Contact() {
             <div className="flex-1">
               <p className="text-lg mb-6 flex items-center justify-center gap-3">
                 <FaEnvelope className="text-secondary text-2xl" />
-                <a href="mailto:aftab32160@gmail.com" className="hover:text-secondary">aftab32160@gmail.com</a>
+                <a href="mailto:ansarifinancialservices@gmail.com" className="hover:text-secondary">ansarifinancialservices@gmail.com</a>
               </p>
 
               <div className="flex justify-center gap-8 mb-10">
