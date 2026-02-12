@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f172a;
+  --color-secondary: #d4af37;
+  --color-accent: #f5d76e;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 98%;
+  }
+
+  body {
+    background:
+      radial-gradient(circle at 20% 30%, rgba(212,175,55,0.08), transparent 40%),
+      hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-sans);
+  }
+}
+
+/* Premium glass */
+.glass {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(212,175,55,0.15);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  transition: all 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 80px rgba(0,0,0,0.8);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-btn {
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+  color: #0f172a;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
